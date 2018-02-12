@@ -1,0 +1,32 @@
+{% extends "_base.twig" %}
+
+{% block page %}
+	{% set page = {
+		title: "Sitemap"
+	} %}
+{% endblock %}
+
+{% block content %}
+	{% set pages = [
+		"background",
+		"carousel",
+		"checkbox",
+		"cookie",
+		"dropdown",
+		"equalize",
+		"lightbox",
+		"media-query",
+		"navigation",
+		"swap",
+		"touch"
+	] %}
+
+	<h2>SpiderFingers</h2>
+	<ul>
+		{% for page in pages %}
+			<li>
+				<a href="{{page}}.html">{{page}}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

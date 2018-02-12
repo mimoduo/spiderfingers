@@ -1,0 +1,48 @@
+{% block page %}
+	{% set page = {} %}
+{% endblock %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{page.title}} | SpiderFingers</title>
+		<meta name="description" content="{{description}}">
+		{% set styles = [
+			"background",
+			"carousel",
+			"checkbox",
+			"dropdown",
+			"equalize",
+			"lightbox",
+			"navigation",
+			"swap"
+		] %}
+		{% for style in styles %}
+			<link rel="stylesheet" href="css/{{style}}.css" />
+		{% endfor %}
+	</head>
+	<body>
+		{% block content %}
+		{% endblock %}
+		{% set scripts = [
+			"core",
+			"mediaquery",
+			"background",
+			"carousel",
+			"checkbox",
+			"cookie",
+			"dropdown",
+			"equalize",
+			"lightbox",
+			"navigation",
+			"swap",
+			"touch",
+			"site"
+		] %}
+		{% for script in scripts %}
+			<script src="js/{{script}}.js"></script>
+		{% endfor %}
+	</body>
+</html>

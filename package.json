@@ -1,0 +1,35 @@
+{
+  "name": "spiderfingers",
+  "version": "1.0.0",
+  "description": "UI library for you, me, and the spider in the corner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimoduo/spiderfingers.git"
+  },
+  "keywords": [
+    "ui",
+    "library",
+    "js",
+    "sass",
+    "twig"
+  ],
+  "author": "mimoduo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimoduo/spiderfingers/issues"
+  },
+  "homepage": "https://github.com/mimoduo/spiderfingers#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^4.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

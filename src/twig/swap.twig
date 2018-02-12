@@ -1,0 +1,19 @@
+{% extends "_base.twig" %}
+
+{% block page %}
+	{% set page = {
+		title: "Swap"
+	} %}
+{% endblock %}
+
+{% block content %}
+	<button class="sf-swap" data-options='{
+		"target": ".swap-target"
+	}'>Swap One</button>
+	<div class="swap-target">Swap Target One</div>
+
+	<button class="sf-swap" data-options='{
+		"target": ".swap-target"
+	}'>Swap Two</button>
+	<div class="swap-target">Swap Target Two</div>
+{% endblock %}
